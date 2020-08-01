@@ -22,7 +22,10 @@ the "-H" option lets you specify a header
 curl -H "Content-Type: application/json" https://api.github.com
 <h4>Body Example</h4>
 Use "-d." For example: curl -X POST <URL> -d property1=value1
-
-<h4>Error codes</h4>
+<h4>HTTP Status codes</h4>
+2xx - success <br>
+3xx - redirection: client must do more to complete request <br>
+4xx - client error: 400 means bad request, 401 means unauthorized, 403 means forbidden, and 404 means not found <br>
+5xx - server error 
 </head>
 </html>
