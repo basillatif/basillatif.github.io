@@ -1,0 +1,19 @@
+<h1>Neural Networks</h1>
+
+A neural network is a highly effective algorithm for classifiying a labeled variable.
+The network predicts the outcome and then learns from its error--constantly improving
+its prediction. <br>
+
+I trained a neural network in Python. A great site to play with the theory behind neural
+networks is <a href="https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.72424&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false">Neural Network Playground</a><br />
+
+<h2>Predicting Bike Rentals Using a London Bike Sharing Dataset</h2>
+I used a dataset I found on Kaggle for this project <a href="https://www.kaggle.com/hmavrodiev/london-bike-sharing-dataset">Bike Sharing Dataset</a><br>
+I imported the file into a Jupyter notebook and started changing the columns. As we see below, I classified values above the median as '1' and below the median as '0'
+<img src = "nn.png" alt = "Picture of code"/>
+Next, we want to train the neural network. After assigning the label field as the new count variable, we initialize the neural network and begin to training the network to predict the count variable.<br>
+<img src = "net.png" alt = "Picture of Net"/>
+And there we have it, the neural network can predict the label of the count variable with ~73% accuracy.
+Full code can be found here: <a href="zhttps://github.com/basillatif/NeuralNetfoLondonBikeDataset
+">https://github.com/basillatif/NeuralNetfoLondonBikeDataset
+</a> 
