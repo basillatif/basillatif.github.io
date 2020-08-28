@@ -1,0 +1,29 @@
+<h1>Trending YouTube Videos Dataset</h1>
+<p>YouTube has a propietary algorithm to determine which of its videos become trending.
+  A Kaggle dataset exists to further analyze which videos started to trend. The dataset
+  was collected using the YouTube API and contains data for different countries in different
+  csv files. The dataset can be found here:
+  <a href="https://www.kaggle.com/datasnaek/youtube-new?select=USvideos.csv
+  ">Kaggle Page for Trending YouTube Videos</a>. On this page, I will share some of the insights I gathered.</p>
+  <h2>Visualizations</h2>
+  <img src="/charts/yt_dashboard.png"  width="800" height="600" alt="YT Dashboard" /> <br> The main numeric columns
+  in this dataset are views, comment count, and likes; thus, I will focus my analysis on those variables.<br />
+<p>We can interpret these results in a systematic fashion. The top left chart of views and comment counts indicates
+  to us that the middle 50% of videos have a linear relationship between views and comment counts. The interesting
+  behavior comes when we look at the top quartile and see that some videos have tremendously high comment counts
+  but low view count. The top right graph again shows us the irregular distibution of views and comment count. </p>
+  <p>The bottom left graph shows us that most videos on YouTube have a low number of likes and a low number of comments.
+    The bottom right graph shows us that the relationship between views and comment count is irregular.
+<h2>Correlations</h2>
+<img src="/charts/views_likes.png" alt="YT Correlations" /><br>
+Here, we see that there is a high correlation between a video's likes and views: 0.84. The next highest correlation is between
+comment count and likes: 0.80. The lowest correlation is between comment count and views.
+<h4>Multivariate Linear Regression</h4>
+<img src="/charts/regression.png" alt="YT Regression" /><br>
+Regression Equation: Y = -928.8 - 0.001167(views) + 0.1634(likes)<br>
+Every additional views has almost no effect (-0.001) on the dependent variable comment count. Each additional like has a large effect on number of comments.
+<h2>Insights</h2>
+1. Surprisingly, the number of views has very little effect on the number of comments on a video with high significance. <br>
+2. The greatest concentration in the dataset lies at minimal views and minimal likes: meaning many videos have few to no views.<br>
+3. The number of likes directly increases the number of comments on a video with high significance.<br>
+4. Some videos with fewer likes have more comments than videos with more likes<br>

@@ -1,0 +1,15 @@
+<h1>Yelp Reviews vs Google Restaurant Reviews</h1>
+The dataset came with the following columns with the key features being the rating and review count.
+<img src="/charts/yelp_head.png" alt="Yelp vs Google" /><br>
+<h2>Visualizations</h2>
+<img src="/charts/Rtgbyarea.png" alt="Area" /><br>
+<p>The above chart shows the average rating by platform per $ category which denotes price. Across the board, the ratings on Google are higher than Yelp. The implication for restaurants is that it might be worthwhile to focus more energy on marketing and improving customer satisfaction on Yelp because it is harder to have happy customers on there. For consumers, Yelp might be a source of more honest reviews since the ratings are lower showing that people are more comfortable expressing a unfavorable opinion there. The platforms need to make sure that there user interfaces are such that they promote an honest and fair channel for restaurants and customers alike. One implication may be that the Google user interface promotes better reviews or that happy people like to post on Google. </p>
+<img src="/charts/Rtgbycost.png" alt="Area" /><br>
+<h2>Analysis</h2>
+<b>How do the two sites compare in terms of the number of reviews (Volume) and star rating (Valence)?</b><br>
+Google has 55,154 reviews while Yelp has 35,252 reviews representing a difference of 19,902 reviews.
+The mean Google review is 4.256 while the mean Yelp review is 3.675. The standard deviation for Google reviews is 0.38 while it is 0.59 for Yelp.<br>
+<b>Is the review rating different across the two sites, and is the difference statistically significant?</b>
+Two sample t test
+t = -11.58
+The p value is <0.00001. Therefore, we reject the null hypothesis that the two means are different and accept the alternative hypothesis that they are different. The result is significant at 0.01 level.
