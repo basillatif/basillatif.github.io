@@ -1,7 +1,11 @@
+<!-- RUN THE SCRIPT
+      python3 -m http.server 
+    -->
+
 <DOCTYPE html>
   <html>
     <head>
-      <!-- python3 -m http.server -->
+      <!-- GOOGLE ANALYTICS SCRIPT-->
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script
         async
@@ -13,31 +17,42 @@
           dataLayer.push(arguments);
         }
         gtag("js", new Date());
-
         gtag("config", "UA-162050765-1");
       </script>
-      <!--end of google analytics tag -->
+      <!--END OF GOOGLE ANALYTICS TAG -->
       <style>
         body {
-          background-color: #e6f2ff;
+          background-color: #eab897;
         }
         .center {
           margin: auto;
           width: 60%;
           padding: 10px;
         }
+        div.a {
+        font-size: 19px;
+          }
       </style>
     </head>
-    <h1>Basil Latif's Portfolio Website</h1>
+    <div class="center">
+    <h1>BASIL LATIF'S PORTFOLIO WEBSITE</h1>
     <div>
       I coded this site to give the world information about what I do.<br />
       Email me at basil.latif@gmail.com if you would like to start a
-      conversation
+    </div>
+  </div>
       <div class="center">
-        <h2>PROFESSIONAL BIO</h2>
+        <h2>DATA SCIENCE & SOFTWARE DEVELOPMENT</h2>
         I am a software developer and data scientist. I have done tons of
-        intersting work. Check out my github:
-        <a href="https://github.com/basillatif">Visit my GitHub</a><br />
+        intersting work. Check out my github: <br>
+        <div.a>
+          <a href = "https://github.com/basillatif">My GitHub Profile: basillatif</a
+            >
+        </div.a>
+
+
+
+
       </div>
     </div>
     <div class="center">
@@ -46,17 +61,26 @@
       <a href="./neuralnet.html">Neural Network to Predict Bike Sharing</a><br>
       <a href="./superbowl.html">Predicting the Score of Super Bowl 54</a><br>
       <a href="./comscore.html">Web Analytics with Comscore Data: 90 Million Rows</a><br>
-
-
-      <h3>Data Analyst Projects</h3>
+    </div>
+    <div class="center">
+      <h3>Predictive Analytics Algorithms</h3>
+      <b><a href="./mcarlo.html">Monte Carlo Simulation</a></b><br>
+      <b><a href="./LSTM">Long Short-Term Memory (LSTM)</a></b>
+      <b><a href=""Others></a></b>
+    </div>
+    <div class="center">
+      <h3>Data Analysis Projects</h3>
       <a href="./yt_data.html">Data Management, Graphics, and Statistics: Trending YouTube Videos</a><br />
       <a href="./yelp_google.html">Yelp vs Google Reviews: Data Compared</a>
+      </div>
+    <div class="center">
       <h3>Data Engineer Projects</h2>
       <a href="./crawl.html">Common Crawl: Internet Link Measurement</a><br />
       <a href="./rest_api.html"> REST API Reference</a><br />
       <a href="./analytics.html">Analytics Framework</a><br /><br />
-
     </div>
+
+
     <div class="center">
       <h3>PUBLISHED ARTICLES</h3>
       <a
@@ -85,7 +109,6 @@
         data-show-count="false"
         >Follow @bazill_theG</a
       ><br>
-      <a href="https://www.imdb.com/user/ur61754371/">My IMDB Ratings Page</a>
       <script
         async
         src="https://platform.twitter.com/widgets.js"
