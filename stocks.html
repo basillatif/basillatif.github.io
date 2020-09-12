@@ -1,18 +1,35 @@
-<h1>Stock Price Projects</h1>
+<DOCTYPE html>
+<html>
+<style>
+  body {
+    background-color: #ffffff
+  }
+  .center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+</style>
+</head>
 
-<h3>Stock Market Data Analysis and Prediction</h3>
-<p>
-  The stock market is a rich data source that can be used to implement analytics
-  and data science techniques. Every stock has price that changes by the second
-  and associated daily, monthly, and yearly volume with open and close
-  prices.<br />
-</p>
+<h1 style="text-align: center">Stock Price Projects</h1>
+<h3 style="text-align: center">Stock Market Data Analysis and Prediction</h3>
 
+<div class="center">
+  <p>
+    The stock market is a rich data source that can be used to implement
+    analytics and data science techniques. Every stock has price that changes by
+    the second and associated daily, monthly, and yearly volume with open and
+    close prices.<br />
+  </p>
 <p>
   I have made a great effort to analyze stock prices to figure out predictive
   signals and long-term trends.
 </p>
-<h2>3 Algorithms/Tools to Predict Future Price Based on Previous Prices</h2>
+</div>
+<h2 style="text-align: center">3 Algorithms/Tools to Predict Future Price Based on Previous Prices</h2>
+<div class="center">
+  <h3>Monte Carlo Simulation</h3>
 1. Monte Carlo Simulation - below is a picture of what all of the simulations
 look like when put on one graph. According to investopedia, "Monte Carlo
 simulations are used to model the probability of different outcomes in a process
@@ -20,35 +37,43 @@ that cannot easily be predicted due to the intervention of random variables. It
 is a technique used to understand the impact of risk and uncertainty in
 prediction and forecasting models." <br />
 <img src="/charts/googl_mc.png" alt="Google Monte Carlo" /><br />
+<h3>Long Short-Term Memory</h3>
 2. Long Short-Term Memory (LSTM) - below is a LSTM projection. According to
 Machine Learning Mastery, "Long Short-Term Memory (LSTM) networks are a type of
 recurrent neural network capable of learning order dependence in sequence
 prediction problems. This is a behavior required in complex problem domains like
 machine translation, speech recognition, and more.<br />
-<img src="/charts/AMZN_LSTM.png" alt="Amzn LSTM" /><br />
-3. Facebook Prophet -
-<a
-  href="https://www.linkedin.com/posts/basil-latif_fbprophet-facebookprophet-amazon-activity-6610699793826230272-WupD"
-  >My LinkedIn Post About Facebook Prophet</a
->
-<p>A Facebook Prophet Simulation Below</p>
-Facebook Prophet was developed by the Data Science Team at Facebook: "Prophet is
+<img src="/charts/AMZN_LSTM.png" alt="Amzn LSTM" style="width:1000px;height:600px;" /><br />
+<h3>Facebook Prophet</h3>
+3. Facebook Prophet was developed by the Data Science Team at Facebook: "Prophet is
 a procedure for forecasting time series data based on an additive model where
 non-linear trends are fit with yearly, weekly, and daily seasonality, plus
 holiday effects. It works best with time series that have strong seasonal
 effects and several seasons of historical data. Prophet is robust to missing
 data and shifts in the trend, and typically handles outliers well."
+<a href="https://www.linkedin.com/posts/basil-latif_fbprophet-facebookprophet-amazon-activity-6610699793826230272-WupD"> My LinkedIn Post About Facebook Prophet</a>
 <img src="/charts/AMZNForecast.png" alt="AMZN FB Prophet" /><br />
-<br />
-<h2>Predicting Future Price Using Text Data and Natural Language Processing</h2>
-You can read about how we developed a system to read in a quarterly earnings
-call transcript and use it to predict the next day's stock price.
-<a
-  href="https://medium.com/@bazill_theG/predicting-stock-price-using-natural-language-processing-8d469bb53de0"
-  >My Medium Article Here</a
->
-<br />
-References: <br />
+</p>
+</div>
+<h2 style="text-align: center">Predicting Future Price Using Text Data and Natural Language Processing</h2>
+<div class="center">
+  <p> 
+  You can read about how we developed a system to read in a quarterly earnings
+  call transcript and use it to predict the next day's stock price. <a href="https://medium.com/@bazill_theG/predicting-stock-price-using-natural-language-processing-8d469bb53de0"
+  >My Medium Article Here</a>
+</p>
+</div>
+<h2 style="text-align: center">Predicting Future Price By Correlating to Economic Indicators</h2>
+<div class="center">
+  <p>In graduate school, I had a professor who thought stock prices could be accurately predicted by correlating
+     to economic indicators. I was assigned to predict the price of Goldman Sachs stock a year down the line. Below is my dashboard output</p>
+     <img src="/charts/GS_Forecast.png" alt="GS Forecast " style="width:1000px;height:600px;" />
+     Here, we see a GDP forecast for the end of 2020 at less than 100 units. We then see there is not a strong correlation between stock price 
+     and GDP in the bottom right graph. In the far left graph, we predict the future price to be just above $200. 
+    </div>
+
+
+<b>References:</b> <br />
 https://www.investopedia.com/terms/m/montecarlosimulation.asp#:~:text=A%20Monte%20Carlo%20simulation%20is,in%20prediction%20and%20forecasting%20models
 <br />
 https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/
