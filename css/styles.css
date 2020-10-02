@@ -1,0 +1,17 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: QuickSand;
+}
+.center {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+
+.topnav {
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+}
