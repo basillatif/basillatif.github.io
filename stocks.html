@@ -27,15 +27,28 @@
   signals and long-term trends.
 </p>
 </div>
+<h1 style="text-align: center">Predicting Long Term Price Trends</h1>
+<div class="center">
+In one project at UC Irvine, I worked with a team of 3 other students to find the best
+predictive algorithm to determine future stock price. For our analysis, we focused on
+the FAANG technology stocks: Facebook, Apple, Amazon, Netflix, and Google.
+</div>
 <h2 style="text-align: center">3 Algorithms/Tools to Predict Future Price Based on Previous Prices</h2>
 <div class="center">
+  <p>Stock price is largely determined by investor sentiment and predictions of future gains. Several key economic theories are at
+  play when one tries to predict a stock price. For one, the current price is supposed to reflect future prices. Further, the  perceived
+  strength of economy also plays a role in stock prices.</p>
+  <p>Our analysis looked at stock prices for technology companies over the last 5 years. It is important 2 things. First, the technology
+    sector has done exceptionally well in the past 2 decades and has seen larger gains than the rest of the economy as a whole. Secondly,
+    we are in the midst of a tremendous bull market. Since the recession of 2008, stock prices have risen significantly. Both of these factors
+    impact why our models were able to perform so well.
   <h3>Monte Carlo Simulation</h3>
-1. Monte Carlo Simulation - below is a picture of what all of the simulations
-look like when put on one graph. According to investopedia, "Monte Carlo
-simulations are used to model the probability of different outcomes in a process
+1. Monte Carlo Simulation - we used the famous Monte Carlo simulation to generate predictions for future prices for Google's stock.
+According to investopedia, "Monte Carlosimulations are used to model the probability of different outcomes in a process
 that cannot easily be predicted due to the intervention of random variables. It
 is a technique used to understand the impact of risk and uncertainty in
-prediction and forecasting models." <br />
+prediction and forecasting models." The graph below shows that most of the simulations (lines) lie in the middle of the chart and go slightly up.
+The Monte Carlo simulation for Google's stock price shows a positive trend for 2017.  <br />
 <img src="/charts/googl_mc.png" alt="Google Monte Carlo" /><br />
 <h3>Long Short-Term Memory</h3>
 2. Long Short-Term Memory (LSTM) - below is a LSTM projection. According to
@@ -57,7 +70,7 @@ data and shifts in the trend, and typically handles outliers well."
 </div>
 <h2 style="text-align: center">Predicting Future Price Using Text Data and Natural Language Processing</h2>
 <div class="center">
-  <p> 
+  <p>
   You can read about how we developed a system to read in a quarterly earnings
   call transcript and use it to predict the next day's stock price. <a href="https://medium.com/@bazill_theG/predicting-stock-price-using-natural-language-processing-8d469bb53de0"
   >My Medium Article Here</a>
@@ -68,8 +81,8 @@ data and shifts in the trend, and typically handles outliers well."
   <p>In graduate school, I had a professor who thought stock prices could be accurately predicted by correlating
      to economic indicators. I was assigned to predict the price of Goldman Sachs stock a year down the line. Below is my dashboard output</p>
      <img src="/charts/GS_Forecast.png" alt="GS Forecast " style="width:1000px;height:600px;" />
-     Here, we see a GDP forecast for the end of 2020 at less than 100 units. We then see there is not a strong correlation between stock price 
-     and GDP in the bottom right graph. In the far left graph, we predict the future price to be just above $200. 
+     Here, we see a GDP forecast for the end of 2020 at less than 100 units. We then see there is not a strong correlation between stock price
+     and GDP in the bottom right graph. In the far left graph, we predict the future price to be just above $200.
     </div>
 
 
