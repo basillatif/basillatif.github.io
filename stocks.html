@@ -55,7 +55,9 @@ The Monte Carlo simulation for Google's stock price shows a positive trend for 2
 Machine Learning Mastery, "Long Short-Term Memory (LSTM) networks are a type of
 recurrent neural network capable of learning order dependence in sequence
 prediction problems. This is a behavior required in complex problem domains like
-machine translation, speech recognition, and more.<br />
+machine translation, speech recognition, and more. We were able to generate a highly accurate LSTM graph for the
+future growth of Amazon stock. Our prediction for 2017 and 2018 is shown in the orange line. It was backtested
+against the actual price during that period shown in the red line. As the graph shows, our prediction is very close to the actual values.<br />
 <img src="/charts/AMZN_LSTM.png" alt="Amzn LSTM" style="width:1000px;height:600px;" /><br />
 <h3>Facebook Prophet</h3>
 3. Facebook Prophet was developed by the Data Science Team at Facebook: "Prophet is
@@ -64,16 +66,9 @@ non-linear trends are fit with yearly, weekly, and daily seasonality, plus
 holiday effects. It works best with time series that have strong seasonal
 effects and several seasons of historical data. Prophet is robust to missing
 data and shifts in the trend, and typically handles outliers well."
-<a href="https://www.linkedin.com/posts/basil-latif_fbprophet-facebookprophet-amazon-activity-6610699793826230272-WupD"> My LinkedIn Post About Facebook Prophet</a>
+<a href="https://www.linkedin.com/posts/basil-latif_fbprophet-facebookprophet-amazon-activity-6610699793826230272-WupD"> My LinkedIn Post About Facebook Prophet</a>Using a 95% confidence interval for
+our prediction, we generate the output graph for the price of Amazon's stock.
 <img src="/charts/AMZNForecast.png" alt="AMZN FB Prophet" /><br />
-</p>
-</div>
-<h2 style="text-align: center">Predicting Future Price Using Text Data and Natural Language Processing</h2>
-<div class="center">
-  <p>
-  You can read about how we developed a system to read in a quarterly earnings
-  call transcript and use it to predict the next day's stock price. <a href="https://medium.com/@bazill_theG/predicting-stock-price-using-natural-language-processing-8d469bb53de0"
-  >My Medium Article Here</a>
 </p>
 </div>
 <h2 style="text-align: center">Predicting Future Price By Correlating to Economic Indicators</h2>
@@ -83,11 +78,17 @@ data and shifts in the trend, and typically handles outliers well."
      <img src="/charts/GS_Forecast.png" alt="GS Forecast " style="width:1000px;height:600px;" />
      Here, we see a GDP forecast for the end of 2020 at less than 100 units. We then see there is not a strong correlation between stock price
      and GDP in the bottom right graph. In the far left graph, we predict the future price to be just above $200.
+     <p>
+     You can read about how we developed a system to read in a quarterly earnings
+     call transcript and use it to predict the next day's stock price. <a href="https://medium.com/@bazill_theG/predicting-stock-price-using-natural-language-processing-8d469bb53de0"
+     >My Medium Article Here</a>
+   </p>
     </div>
 
-
+<div class="center">
 <b>References:</b> <br />
 https://www.investopedia.com/terms/m/montecarlosimulation.asp#:~:text=A%20Monte%20Carlo%20simulation%20is,in%20prediction%20and%20forecasting%20models
 <br />
 https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/
 https://facebook.github.io/prophet/
+</div>
