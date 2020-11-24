@@ -1,10 +1,13 @@
 <h1 style="text-align: center">AirBnb Price Analysis and Prediction</h1>
+<div class="center">
 <p>
   The dataset contains data from the Airbnb website for different listings for
   the Los Angeles Area. It has a combination of numeric and categorical data,
   and the dependent variable for this analysis will be “Price” which is a
   numeric variable.
 </p>
+</div>
+<div class="center">
 We would like to achieve the following: <br />
 1. Run correlations on the different features of an Airbnb listing and determine
 how they affect the price.<br />
@@ -13,7 +16,9 @@ Airbnb listing. <br />
 3. Run Regressions and Random Forest predictive models to predict the most
 optimal base price brackets for and Airbnb host.
 <br />
+</div>
 <h2 style="text-align: center">Exploratory Data Analysis</h2>
+<div class="center">
 <b>Amenities Highly Correlated with Price</b>
 <p>
   Based correlation analysis between the different amenities and price, we find
@@ -23,6 +28,8 @@ optimal base price brackets for and Airbnb host.
   around $500. Places that offer Swimming pools, spas or saunas also have a
   higher median price than those that don’t.
 </p>
+</div>
+<div class="center">
 <b>Amenities with Low Correlation with Price</b>
 <p>
   Low correlated Amenities There are also amenities, like the bidet, which seem
@@ -31,7 +38,9 @@ optimal base price brackets for and Airbnb host.
   this difference in price could again be due how upscale the rest of the
   accommodation is.
 </p>
+</div>
 <h2 style="text-align: center">Prediction with Random Forest</h2>
+<div class="center">
 <p>
   The categorical variables used for this predictions were property_type and
   room_type. The model was generated using 80% of the data for training and the
@@ -52,3 +61,4 @@ optimal base price brackets for and Airbnb host.
   variables as predictors. The following results were generated
 </p>
 <img src="/charts/lreg_abb.png" alt="ABB Linear Regression" /><br />
+</div>

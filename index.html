@@ -27,7 +27,20 @@
       <meta name="author" content="SitePoint" />
       <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
-    <STYLE>A {text-decoration: none;} </STYLE>
+    <STYLE>
+      a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      a:hover, a:active {
+        background-color: red;
+      }
+      a.one:link {color: #ff0000;}
+    </STYLE>
 
 <div align="center">
   <h1>BASIL LATIF'S PORTFOLIO WEBSITE--DATA SCIENCE & ANALYTICS</h1>
@@ -40,6 +53,8 @@
   <a href="publicity.html">Published Links</a>
   <a href="running.html">Running</a>
   <a href="contact.html">Contact</a>
+  <a href="default.asp" target="_blank">This is a link</a>
+
 </div>
 
 <div align="center">
@@ -57,8 +72,8 @@
   <img src="/nn.png" alt="NN Code" class="center"/>
   </p>
   <h3>Other Important Data Science Projects</h3>
-    <a href="./superbowl.html">Predicting the Score of Super Bowl 54 with Ensembe Modeling</a><br>
-    <a href="./comscore.html">Web Analytics with Comscore Data: Clustering 90 Million Rows</a><br>
+    <a href="./superbowl.html">Predicting the Score of Super Bowl 54 with Ensembe Modeling</a><br><br>
+    <a href="./comscore.html">Web Analytics with Comscore Data: Clustering 90 Million Rows</a><br><br>
     <a href="./clustering.html">K Means Clustering on Google App Store Data</a>
 </div>
 
@@ -71,14 +86,14 @@
      -->
 <div align="center">
   <h3>Data Analysis Projects</h3>
-    <a href="./yt_data.html">Data Management, Graphics, and Statistics: Trending YouTube Videos</a><br />
+    <a href="./yt_data.html">Data Management, Graphics, and Statistics: Trending YouTube Videos</a><br><br>
     <a href="./yelp_google.html">Yelp vs Google Reviews: Data Compared</a>
 </div>
 
 <div align="center">
   <h3>Data Engineer Projects</h2>
-  <a href="./crawl.html">Common Crawl: Internet Link Measurement</a><br />
-  <a href="./rest_api.html"> REST API Reference</a><br>
+  <a class="one" href="./crawl.html" target="_blank">Common Crawl: Internet Link Measurement</a><br><br>
+  <a href="./rest_api.html"> REST API Reference</a><br><br>
   <a href="./analytics.html">Analytics Framework</a><br /><br>
 </div>
     <!--Hit counter code-->
