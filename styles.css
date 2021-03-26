@@ -1,0 +1,55 @@
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+h1 {
+  font-weight: bold;
+  font-size: 44px;
+}
+
+p {
+  text-indent: 30px;
+	font-size:30px;
+}
+a:link, a:visited {
+	background-color: #0000ff;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	background-color: red;
+}
+
+a.two:link, a.two:visited {
+	background-color: #008000;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+
+.topnav {
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.aligncenter {
+	text-align: center;
+}
