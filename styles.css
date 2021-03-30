@@ -34,6 +34,14 @@ a.two:link, a.two:visited {
 	display: inline-block;
 }
 
+a.three:link, a.three:visited{
+	background-color: #7FFFD4;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
 
 .center {
 	display: block;
