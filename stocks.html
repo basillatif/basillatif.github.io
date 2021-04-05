@@ -42,15 +42,22 @@ the FAANG technology stocks: Facebook, Apple, Amazon, Netflix, and Google.
     sector has done exceptionally well in the past 2 decades and has seen larger gains than the rest of the economy as a whole. Secondly,
     we are in the midst of a tremendous bull market. Since the recession of 2008, stock prices have risen significantly. Both of these factors
     impact why our models were able to perform so well.
-  <h3>Monte Carlo Simulation</h3>
+  </div>
+
+  <h3 style="text-align: center">Monte Carlo Simulation</h3>
+  <div class="center">
 1. Monte Carlo Simulation - we used the famous Monte Carlo simulation to generate predictions for future prices for Google's stock.
 According to investopedia, "Monte Carlosimulations are used to model the probability of different outcomes in a process
 that cannot easily be predicted due to the intervention of random variables. It
 is a technique used to understand the impact of risk and uncertainty in
 prediction and forecasting models." The graph below shows that most of the simulations (lines) lie in the middle of the chart and go slightly up.
 The Monte Carlo simulation for Google's stock price shows a positive trend for 2017.  <br />
-<img src="/charts/googl_mc.png" alt="Google Monte Carlo" /><br />
-<h3>Long Short-Term Memory</h3>
+</div>
+<div class="center">
+<img src="/charts/googl_mc.png" alt="Google Monte Carlo" style="width:1000px;height:600px;" /><br />
+</div>
+<h3 style="text-align: center">Long Short-Term Memory</h3>
+<div class="center">
 2. Long Short-Term Memory (LSTM) - below is a LSTM projection. According to
 Machine Learning Mastery, "Long Short-Term Memory (LSTM) networks are a type of
 recurrent neural network capable of learning order dependence in sequence
@@ -59,7 +66,9 @@ machine translation, speech recognition, and more. We were able to generate a hi
 future growth of Amazon stock. Our prediction for 2017 and 2018 is shown in the orange line. It was backtested
 against the actual price during that period shown in the red line. As the graph shows, our prediction is very close to the actual values.<br />
 <img src="/charts/AMZN_LSTM.png" alt="Amzn LSTM" style="width:1000px;height:600px;" /><br />
-<h3>Facebook Prophet</h3>
+</div>
+<h3 style="text-align: center">Facebook Prophet</h3>
+<div class="center">
 3. Facebook Prophet was developed by the Data Science Team at Facebook: "Prophet is
 a procedure for forecasting time series data based on an additive model where
 non-linear trends are fit with yearly, weekly, and daily seasonality, plus
@@ -69,7 +78,6 @@ data and shifts in the trend, and typically handles outliers well."
 <a href="https://www.linkedin.com/posts/basil-latif_fbprophet-facebookprophet-amazon-activity-6610699793826230272-WupD" target="_blank" rel="noopener noreferrer"> My LinkedIn Post About Facebook Prophet</a>Using a 95% confidence interval for
 our prediction, we generate the output graph for the price of Amazon's stock.
 <img src="/charts/AMZNForecast.png" alt="AMZN FB Prophet" /><br />
-</p>
 </div>
 <h2 style="text-align: center">Predicting Future Price By Correlating to Economic Indicators</h2>
 <div class="center">
