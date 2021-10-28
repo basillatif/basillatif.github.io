@@ -49,6 +49,12 @@ a.three:link, a.three:visited{
 	margin-right: auto;
 	width: 50%;
 }
+.picture {
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
 
 
 .topnav {
