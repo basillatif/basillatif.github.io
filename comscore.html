@@ -12,24 +12,16 @@
 <h1>Web Behavior Dataset: Demographics, Transcations, and Web Session</h1>
 <a href="index.html">Go Back to Home Page</a><br><br>
 This dataset was provided by Comscore, a leader in web analytics data. <br />
-<img src="/cscore/comscore-logo.jpg" width="200" height="100" alt="Logo" /><br />
+<img src="/cscore/comscore-logo.jpg" width="500" height="500" alt="Logo Trim" /><br />
 <a href="https://www.comscore.com/">https://www.comscore.com/</a><br />
 
-<h3>Project Goal:</h3>
+<h1>Project Goal:</h1>
 <p>
   The goal of this project was to understand which factors impacted customers
   purchasing behavior, and how we can increase a customers basket total based on
-  recommending them with items they might be more likely to purchase. We were
-  given 3 files,"sessions.csv", "tran_2014.csv", and "demographics.csv." These
-  files encompassed clickstream, purchase, and demographic characteristics for
-  over 90M rows of user data. In order to run these files on our desktops, we
-  took a 1% random sample from the sessions table, and joined all tables on
-  machine_id to analyze over 3,000 unique users. Although Comscore provided us
+  recommending them with items they might be more likely to purchase. Although Comscore provided us
   with user data from over 20 different domains, our interest was in the type of
   products customers purchased rather than which domain customers purchased on.
-  Through this paper, we will explore the underlying relationships within some
-  key variables, conduct a cluster analysis, and finally build a recommendation
-  system for users.
 </p>
 <h2>Exploratory Data Analysis</h2>
 <img src="/cscore/pagxdur.jpeg" alt="Views" /><br />
@@ -50,7 +42,7 @@ This dataset was provided by Comscore, a leader in web analytics data. <br />
   that when making a purchase the time spent on a page and the time spent
   overall on the website linearly increases when you have a serious buyer.
 </p>
-<h2>Clustering on this Dataset</h2>
+<h1>Clustering on this Dataset</h1>
 <p>
   Clustering is a powerful technique to explore patterns structures within data
   and has wide applications in business analytics. We decided to use clusters to
@@ -83,7 +75,7 @@ This dataset was provided by Comscore, a leader in web analytics data. <br />
   website. Cluster 2 has a higher average duration compared with the other
   clusters.
 </p>
-<h2>Recommender Using Collaborative Filtering</h2>
+<h1>Recommender Using Collaborative Filtering</h1>
 <p>
   The purpose is to suggest relevant items to users. To achieve this task, there
   are three major requirements that need to be satisfied to build a recommender
