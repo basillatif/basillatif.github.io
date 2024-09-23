@@ -1,117 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-  <head>
-    <meta charset="utf-8" />
-    <title>Basil Latif Portfolio</title>
-    <meta name="description" content="BL Articles" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Basil Latif Portfolio - Data Science Projects</title>
+  <meta name="description" content="Basil Latif's Data Science Projects">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Basil Latif">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Inline CSS for Demonstration (Move to styles.css in Production) -->
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<div class align="center">
-			<h1>PUBLISHED ARTICLES - LINKS TO MY WORK</h1>
-</div>
-<div class="topnav">
-	<a href="index.html">Home</a>
-	  <a href="projects.html">Data Science Projects</a>
-	  <a href="teaching.html">Teaching Portfolio</a>
-	  <a href="consulting.html">Consulting Portfolio</a>
-	<a href="books.html">Top 20 Books</a>
-	  <a href="contact.html">Contact</a>
-	  </div><br>
-	  <div align="center">
-		I keep track complex problems that I have solved professionally. Below, you can peek at a sample of some of those pieces published across the Internet
-	</p> 
-</div>
-<div align="center">
-	<h2 style="text-align: center">CA ZEV Population Dashboard</h2>
-	<h3 style="text-align: left">Problem Summary: The State of California needed a way to keep track of all deployed zero-emission (ZE) vehicles</h3>
-	<h3 style="text-align: left">My approach: Collect the data, write a Python Script to centralize all the data and add new features. Then build a Tableau dashboard dynamically plotting the output. </h3>
-	<h3 style="text-align: left">Result: The Dashboard Shown Below</h3>
-	<img src="/images/zev_dashboard.png" alt="Dashboard" width="500" height="300"><br>
-	<a class = "two" href="https://californiahvip.org/industryinitiatives/#cazevdashboard" target="_blank" rel="noopener noreferrer">Click to View the Dashboard Here</a><br>
-  </div>
-  <div align="center">
-	<h2 style="text-align: center">First/Last-Mile Emissions Estimation Tool</h2>
-	<h3 style="text-align: center">I used JavaScript to build a delivery calculator to quantify the impact of switching to Zero-Emission vehicle for last-mile delivery.</h1>
-	<img src="/images/calc_table.png" alt="Calculator" width="500" height="300"><br>
-	<a class = "two" href="https://globaldrivetozero.org/tools/deliveryfleet/" target="_blank" rel="noopener noreferrer">Click to View Interactive Tool</a><br>
-  </div>
-  <div align="center">
-    <h2>KEEPA API Product</h2>
-    <a class = "two"
-    href="https://www.upwork.com/services/product/development-it-google-sheet-that-connects-to-the-keepa-api-1435016328773017600" target="_blank"
-    >Buy the Amazon Price Data - Keepa API</a>
-    <br>
-    <div class="picture">
-      <img src="/images/Keepa_product.png"  alt="keepa Pic " width=700 height=500><br>
-    </div>
-</div>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #ECF0F1; /* Light Gray */
+      color: #34495E; /* Dark Gray */
+    }
 
-<div align="center">
-  <h2>Articles Published on TowardsDataScience.com</h2>
-  <a class = "two"
-    href="https://towardsdatascience.com/how-i-built-a-google-spreadsheet-to-keep-track-of-google-fit-fitness-data-a0887a59f730" target="_blank"
-    >How I Built My Own Fitness Tracker Using Google Fit Data</a><br><br>
-	<div class="picture">
-        <img src="/images/tds_article.png"  alt="TDS Article " width=500 height=750>
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+      color: #1ABC9C; /* Teal */
+    }
+
+    a:hover {
+      color: #2C3E50; /* Navy Blue */
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2C3E50; /* Navy Blue */
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #2C3E50; /* Navy Blue */
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      padding: 14px 20px;
+      display: block;
+      color: #ECF0F1; /* Light Gray */
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      background-color: #1ABC9C; /* Teal */
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Introduction */
+    .intro {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #34495E; /* Dark Gray */
+    }
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .project-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .project-content {
+      padding: 15px 20px;
+    }
+
+    .project-content h2 {
+      font-size: 1.5rem;
+      color: #2C3E50; /* Navy Blue */
+      margin-bottom: 10px;
+    }
+
+    .project-content h3 {
+      font-size: 1rem;
+      color: #7F8C8D; /* Slate Gray */
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-content a.button {
+      display: inline-block;
+      padding: 8px 12px;
+      background-color: #1ABC9C; /* Teal */
+      color: #ffffff;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-content a.button:hover {
+      background-color: #16A085; /* Darker Teal */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2C3E50; /* Navy Blue */
+      color: #ECF0F1; /* Light Gray */
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .topnav a {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>PUBLISHED ARTICLES - LINKS TO MY WORK</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Data Science Projects</a>
+    <a href="teaching.html">Teaching Portfolio</a>
+    <a href="consulting.html">Consulting Portfolio</a>
+    <a href="books.html">Top 20 Books</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Introduction -->
+    <section class="intro">
+      <p>I keep track of complex problems that I have solved professionally. Below, you can peek at a sample of some of those pieces published across the Internet.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/zev_dashboard.png" alt="CA ZEV Population Dashboard">
+        </div>
+        <div class="project-content">
+          <h2>CA ZEV Population Dashboard</h2>
+          <h3>Problem Summary:</h3>
+          <p>The State of California needed a way to keep track of all deployed zero-emission (ZE) vehicles.</p>
+          <h3>My Approach:</h3>
+          <p>Collected the data, wrote a Python script to centralize all the data and add new features, then built a Tableau dashboard dynamically plotting the output.</p>
+          <h3>Result:</h3>
+          <p>The Dashboard Shown Below</p>
+          <a href="https://californiahvip.org/industryinitiatives/#cazevdashboard" target="_blank" rel="noopener noreferrer" class="button">Click to View the Dashboard Here</a>
+        </div>
       </div>
-</div>
-<div align="center">
-  <h2>Articles Published on Medium.com</h2>
 
-  <a class = "two"
-    href="https://basil-latif.medium.com/predicting-stock-price-using-natural-language-processing-8d469bb53de0" target="_blank"
-    >Predicting Stock Price with Natural Language Processing in Python</a><br>
-	<div class="picture">
-        <img src="/images/M_L_On_Earnings.png"  alt="TDS Article " width=900 height=500><br>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/calc_table.png" alt="First/Last-Mile Emissions Estimation Tool">
+        </div>
+        <div class="project-content">
+          <h2>First/Last-Mile Emissions Estimation Tool</h2>
+          <h3>Project Overview:</h3>
+          <p>I used JavaScript to build a delivery calculator to quantify the impact of switching to Zero-Emission vehicles for last-mile delivery.</p>
+          <a href="https://globaldrivetozero.org/tools/deliveryfleet/" target="_blank" rel="noopener noreferrer" class="button">Click to View Interactive Tool</a>
+        </div>
       </div>
 
-	<div>
-    <a class = "two"
-    href="https://medium.com/@basil-latif/predicting-stock-price-using-natural-language-processing-8d469bb53de0" target="_blank"
-    >Link to Medium Article</a><br><br>
-  <a class = "two"
-    href="https://basil-latif.medium.com/" target="_blank"
-    >Follow me on Medium.com to get the latest articles</a><br><br>
-</div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/Keepa_product.png" alt="KEEPA API Product">
+        </div>
+        <div class="project-content">
+          <h2>KEEPA API Product</h2>
+          <p>Developed a Google Sheet that connects to the Keepa API, allowing users to buy Amazon Price Data effortlessly.</p>
+          <a href="https://www.upwork.com/services/product/development-it-google-sheet-that-connects-to-the-keepa-api-1435016328773017600" target="_blank" rel="noopener noreferrer" class="button">Buy the Amazon Price Data - Keepa API</a>
+        </div>
+      </div>
 
-<div align="center">
-<h3>Data Analysis Projects</h3>
-<a class = "two" href="./airbnb.html">Using Data Science to Analyze Airbnb Listings in R</a><br>
-<a href="abb_report.pdf" download>Click to download the report</a>
-<br><br>
-<a class = "two" href="./neuralnet.html">Neural Network to Predict Bike Sharing in Python</a><br><br>
-<a class = "two" href="./superbowl.html">Predicting the Score of Super Bowl 54 Using Ensemble Modeling in Python</a><br><br>
-<a class = "two" href="./comscore.html">Web Analytics with Comscore Data: Clustering 90 Million Rows in R</a><br><br>
-</div>
-<!-- BLOCK COMMENT
-		<div align="center">
-      <h3>Data Analysis Projects</h3>
-			<a class = "two" href="./airbnb.html">Using Data Science to Analyze Airbnb Listings in R</a><br>
-			<a href="abb_report.pdf" download>Click to download the report</a>
-			<br><br>
-			<a class = "two" href="./neuralnet.html">Neural Network to Predict Bike Sharing in Python</a><br><br>
-		  <a class = "two" href="./superbowl.html">Predicting the Score of Super Bowl 54 Using Ensemble Modeling in Python</a><br><br>
-		  <a class = "two" href="./comscore.html">Web Analytics with Comscore Data: Clustering 90 Million Rows in R</a><br><br>
-		</div>
-		<div align="center">
-		    <a class = "two" href="./yt_data.html">Data Management, Graphics, and Statistics: Trending YouTube Videos in R</a><br><br>
-		    <a class = "two" href="./yelp_google.html">Yelp vs Google Reviews: Data Compared in Excel</a>
-		</div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/tds_article.png" alt="Articles Published on TowardsDataScience.com">
+        </div>
+        <div class="project-content">
+          <h2>Articles Published on TowardsDataScience.com</h2>
+          <p>How I Built My Own Fitness Tracker Using Google Fit Data</p>
+          <a href="https://towardsdatascience.com/how-i-built-a-google-spreadsheet-to-keep-track-of-google-fit-fitness-data-a0887a59f730" target="_blank" rel="noopener noreferrer" class="button">Read the Article</a>
+        </div>
+      </div>
 
-		<div align="center">
-		  <h3>Data Engineer Projects</h3>
-		  <a class = "two" href="./crawl.html" target="_blank">Common Crawl: Internet Link Measurement</a><br><br>
-		  <a class = "two" href="./rest_api.html"> REST API Reference</a><br><br>
-		  <a class = "two" href="./analytics.html">Analytics Framework</a><br /><br>
-      <a class = "two" href="./stocks.html"> Predicing Stock Price </a>
-			</div>
-    </div>
-	-->
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="/images/M_L_On_Earnings.png" alt="Articles Published on Medium.com">
+        </div>
+        <div class="project-content">
+          <h2>Articles Published on Medium.com</h2>
+          <p>Predicting Stock Price with Natural Language Processing in Python</p>
+          <a href="https://basil-latif.medium.com/predicting-stock-price-using-natural-language-processing-8d469bb53de0" target="_blank" rel="noopener noreferrer" class="button">Read the Article</a>
+          <a href="https://medium.com/@basil-latif/predicting-stock-price-using-natural-language-processing-8d469bb53de0" target="_blank" rel="noopener noreferrer" class="button" style="margin-top: 10px;">Link to Medium Article</a>
+          <a href="https://basil-latif.medium.com/" target="_blank" rel="noopener noreferrer" class="button" style="margin-top: 10px;">Follow me on Medium.com</a>
+        </div>
+      </div>
 
-	<body>
-		<script src="js/scripts.js"></script>
-	</body>
+      <!-- Additional Projects -->
+      <div class="project-card">
+        <div class="project-content">
+          <h2>Data Analysis Projects</h2>
+          <ul>
+            <li><a href="./airbnb.html">Using Data Science to Analyze Airbnb Listings in R</a></li>
+            <li><a href="abb_report.pdf" download>Click to Download the Report</a></li>
+            <li><a href="./neuralnet.html">Neural Network to Predict Bike Sharing in Python</a></li>
+            <li><a href="./superbowl.html">Predicting the Score of Super Bowl 54 Using Ensemble Modeling in Python</a></li>
+            <li><a href="./comscore.html">Web Analytics with Comscore Data: Clustering 90 Million Rows in R</a></li>
+          </ul>
+        </div>
+      </div>
 
-	</html>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Basil Latif. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
