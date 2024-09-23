@@ -1,86 +1,311 @@
-<!-- RUN THE SCRIPT
-      python3 -m http.server
-      Make a pholosophy section
-      Make a blog section
-      Make a data science theory section
-      3 link colors: red: #f44336, blue: #0000ff, purple:#800080
-    -->
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <title>BL HomePage</title>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-162050765-1"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "UA-162050765-1");
-      </script>
-      <!--END OF GOOGLE ANALYTICS TAG -->
-      <meta charset="utf-8" />
-		  <title>BL Portfolio</title>
-		  <meta name="description" content="BL Portfolio" />
-      <meta name="author" content="SitePoint" />
-      <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
-    <body>
-<div align="center">
-  <h1>BASIL LATIF'S TECH BLOG - DATA SCIENCE & ANALYTICS</h1>
-    </div>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <title>BL HomePage</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162050765-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-162050765-1');
+  </script>
+  <!-- END OF GOOGLE ANALYTICS TAG -->
 
-    <div class="topnav">
-      <a href="index.html">Home</a>
-        <a href="projects.html">Data Science Projects</a>
-        <a href="teaching.html">Teaching Portfolio</a>
-        <a href="consulting.html">Consulting Portfolio</a>
-      <a href="books.html">Top 20 Books</a>
-        <a href="contact.html">Contact</a>
-      </div><br>
-  <div align="center">
-    <p>
-      I am a Lead Data Scientist with 5+ years of experience in software development and data analytics.</p>
-    </p>
-    <strong><p>
-     Career Highlights
-    </strong></p>
-        <p>
-      -In 2019, I was hired as a software engineer at Ranker.com <br>
-      -In 2020, I received a scholarship to get my MSBA from UC Irvine. <br>
-      -In 2021, I was honored by Upwork.com as a "Top Rated Plus" freelancer on their platform <br>
-      -In 2022, I was promoted to Lead Data Scientist at CALSTART<br>
-      -In 2024, I taught a graduate-level course in data science at Loyola Marymount University<br>
-    </p>
-    <strong><p>
-      Other Career Activities
-     </strong></p>
-         <p>
-       -Since 2021, I have led Business Development for Iconycs: a housing data analytics startup aiming to reduce discrimination in the housing industry<br>
-       -In 2024, I led a data analytics Capstone project for George Washington University's MSBA program using Iconycs data<br>
-       -I am one of the leaders in selling Keepa API data on the Internet<br>
-     </p>
-    <strong><p>
-      Core Data Science Competencies
-     </strong>
-     <p>
-      - Data Wrangling (cleaning) <br>
-      - Machine Learning (supervised and unsupervised) <br>
-      - SQL <br>
-      - Statistics<br>
-      - Analytics<br>
-      - Data Engineering<br>
-    </p>
-    <p>Browse this site to learn about my professional interests and accomplishments </p>
-    <div class="picture">
-        <img src="/images/headshot3.jpeg"  alt="Headshot Pic " width=511 height=767>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BL Portfolio">
+  <meta name="author" content="Basil Latif">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Inline CSS for Demonstration (Move to styles.css in Production) -->
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #ECF0F1; /* Light Gray */
+      color: #34495E; /* Dark Gray */
+    }
+
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffffff;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2C3E50; /* Navy Blue */
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #7F8C8D; /* Slate Gray */
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background-color: #2C3E50; /* Navy Blue */
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      padding: 14px 20px;
+      display: block;
+      color: #ECF0F1; /* Light Gray */
+      font-weight: bold;
+    }
+
+    .topnav a:hover {
+      background-color: #1ABC9C; /* Teal */
+      color: #ffffff;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Introduction */
+    .intro, .career, .activities, .competencies, .additional-sections {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #34495E; /* Dark Gray */
+    }
+
+    .career h2, .activities h2, .competencies h2, .additional-sections h2 {
+      margin-bottom: 10px;
+      color: #2C3E50; /* Navy Blue */
+      border-bottom: 2px solid #1ABC9C; /* Teal */
+      padding-bottom: 5px;
+    }
+
+    .career ul, .activities ul, .competencies ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .career li, .activities li, .competencies li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .career li::before, .activities li::before, .competencies li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #1ABC9C; /* Teal */
+    }
+
+    .competencies li {
+      color: #555;
+    }
+
+    /* Additional Sections */
+    .additional-sections .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .additional-sections .box {
+      flex: 1 1 30%;
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .additional-sections .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .additional-sections .box h3 {
+      margin-bottom: 10px;
+      color: #2C3E50; /* Navy Blue */
+    }
+
+    /* Image Section */
+    .image-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Call to Action */
+    .call-to-action p {
+      text-align: center;
+      margin-top: 20px;
+      color: #7F8C8D; /* Slate Gray */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2C3E50; /* Navy Blue */
+      color: #ECF0F1; /* Light Gray */
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .additional-sections .content {
+        flex-direction: column;
+      }
+
+      .topnav a {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>BASIL LATIF'S TECH BLOG</h1>
+    <p>Data Science & Analytics</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Data Science Projects</a>
+    <a href="teaching.html">Teaching Portfolio</a>
+    <a href="consulting.html">Consulting Portfolio</a>
+    <a href="books.html">Top 20 Books</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Introduction -->
+    <section class="intro">
+      <p>I am a Lead Data Scientist with 5+ years of experience in software development and data analytics.</p>
+    </section>
+
+    <!-- Career Highlights -->
+    <section class="career">
+      <h2>Career Highlights</h2>
+      <ul>
+        <li>In 2019, hired as a Software Engineer at Ranker.com</li>
+        <li>In 2020, received a scholarship to pursue MSBA from UC Irvine</li>
+        <li>In 2021, honored by Upwork.com as a "Top Rated Plus" freelancer</li>
+        <li>In 2022, promoted to Lead Data Scientist at CALSTART</li>
+        <li>In 2024, taught a graduate-level course in data science at Loyola Marymount University</li>
+      </ul>
+    </section>
+
+    <!-- Other Career Activities -->
+    <section class="activities">
+      <h2>Other Career Activities</h2>
+      <ul>
+        <li>Since 2021, led Business Development for Iconycs: a housing data analytics startup aiming to reduce discrimination in the housing industry</li>
+        <li>In 2024, led a data analytics Capstone project for George Washington University's MSBA program using Iconycs data</li>
+        <li>One of the leaders in selling Keepa API data on the Internet</li>
+      </ul>
+    </section>
+
+    <!-- Core Data Science Competencies -->
+    <section class="competencies">
+      <h2>Core Data Science Competencies</h2>
+      <ul>
+        <li>Data Wrangling (Cleaning)</li>
+        <li>Machine Learning (Supervised and Unsupervised)</li>
+        <li>SQL</li>
+        <li>Statistics</li>
+        <li>Analytics</li>
+        <li>Data Engineering</li>
+      </ul>
+    </section>
+
+    <!-- Additional Sections: Projects, Teaching Portfolio, Consulting Portfolio -->
+    <section class="additional-sections">
+      <h2>Explore More</h2>
+      <div class="content">
+        <!-- Projects Section -->
+        <div class="box">
+          <h3>Data Science Projects</h3>
+          <p>Explore my diverse range of data science projects, showcasing my skills and expertise in tackling complex challenges.</p>
+          <a href="projects.html" style="color: #1ABC9C;">View Projects</a>
+        </div>
+        
+        <!-- Teaching Portfolio Section -->
+        <div class="box">
+          <h3>Teaching Portfolio</h3>
+          <p>Learn about my experience in teaching data science courses and my contributions to academic programs.</p>
+          <a href="teaching.html" style="color: #1ABC9C;">Explore Teaching</a>
+        </div>
+        
+        <!-- Consulting Portfolio Section -->
+        <div class="box">
+          <h3>Consulting Portfolio</h3>
+          <p>Discover my consulting projects and how I've helped organizations leverage data for strategic decision-making.</p>
+          <a href="consulting.html" style="color: #1ABC9C;">View Consulting</a>
+        </div>
       </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+      <img src="/images/headshot3.jpeg" alt="Headshot of Basil Latif" width="511" height="767">
+    </section>
+
+    <!-- Call to Action -->
+    <section class="call-to-action">
+      <p>Browse this site to learn about my professional interests and accomplishments.</p>
+    </section>
+
   </div>
-</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Basil Latif. All rights reserved.</p>
+  </footer>
+
 </body>
-  </html>
-</DOCTYPE>
+</html>
