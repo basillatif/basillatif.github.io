@@ -43,19 +43,19 @@
   .topnav {
 	display: flex;
 	justify-content: center;
-	background-color: #1ABC9C; /* Red*/
+	background-color: #1ABC9C; /* Teal*/
 	flex-wrap: wrap;
   }
   
   .topnav a {
 	padding: 14px 20px;
 	display: block;
-	color: #FF0000; /* Light Gray */
+	color: #1ABC9C; /* Red */
 	font-weight: bold;
   }
   
   .topnav a:hover {
-	background-color: #FF0000; /* Teal */
+	background-color: #FF0000; /* Red */
 	color: #ffffff;
   }
   
