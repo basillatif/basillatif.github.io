@@ -43,7 +43,7 @@
   .topnav {
 	display: flex;
 	justify-content: center;
-	background-color: #2C3E50; /* Navy Blue */
+	background-color: #1ABC9C; /* Navy Blue */
 	flex-wrap: wrap;
   }
   
