@@ -50,12 +50,12 @@
   .topnav a {
 	padding: 14px 20px;
 	display: block;
-	color: #FF0000; /* Red */
+	color: #FF0000; 
 	font-weight: bold;
   }
   
   .topnav a:hover {
-	background-color: #1ABC9C; /* Red */
+	background-color: #1ABC9C; 
 	color: #ffffff;
   }
   
@@ -64,6 +64,7 @@
 	max-width: 1200px;
 	margin: 30px auto;
 	padding: 0 20px;
+	text-align: center;
   }
   
   /* Introduction */
