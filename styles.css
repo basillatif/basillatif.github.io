@@ -228,10 +228,10 @@
   
   .additional-sections .box {
 	flex: 1 1 30%;
-	background-color: #f4f4f4;
-	padding: 15px;
+	background-color: #f8f9fa;
+	padding: 20px;
 	border-radius: 8px;
-	text-align: center;
+	text-align: left;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -247,6 +247,34 @@
   
   .additional-sections .box a {
 	color: #1ABC9C; /* Teal */
+  }
+  
+  .additional-sections .box p {
+	color: #555;
+	margin-bottom: 15px;
+	font-size: 0.9rem;
+  }
+  
+  .explore-list {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .explore-list li {
+	margin-bottom: 8px;
+  }
+  
+  .explore-list a {
+	color: #1ABC9C;
+	font-size: 0.9rem;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	display: inline-block;
+  }
+  
+  .explore-list a:hover {
+	color: #16A085;
+	text-decoration: underline;
   }
   
   /* Image Section */
