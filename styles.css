@@ -94,9 +94,11 @@
   /* Projects Section */
   .projects {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 15px;
-	padding: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+	padding: 20px 0;
+	max-width: 1200px;
+	margin: 0 auto;
   }
   
   .project-card {
@@ -105,8 +107,9 @@
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 	overflow: hidden;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	max-width: 400px;
-	margin: 0 auto;
+	height: 100%; /* Ensure all cards are same height */
+	display: flex;
+	flex-direction: column;
   }
   
   .project-card:hover {
@@ -115,48 +118,54 @@
   }
   
   .project-image {
-	height: 200px;
-	overflow: hidden;
+	position: relative;
+	padding-top: 56.25%; /* 16:9 aspect ratio */
   }
   
   .project-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	display: block;
   }
   
   .project-content {
-	padding: 12px 15px;
+	padding: 15px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
   }
   
   .project-content h2 {
-	font-size: 1.2rem;
-	color: #2C3E50;
+	font-size: 1.1rem;
 	margin-bottom: 8px;
+	color: #2C3E50;
   }
   
   .project-content h3 {
 	font-size: 0.9rem;
 	color: #7F8C8D;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
   }
   
   .project-content p {
 	font-size: 0.85rem;
 	color: #555;
-	margin-bottom: 10px;
-	line-height: 1.4;
+	margin-bottom: 12px;
+	flex-grow: 1; /* Push button to bottom */
   }
   
   .button {
-	display: inline-block;
-	padding: 6px 10px;
+	align-self: flex-start; /* Align button to left */
+	font-size: 0.85rem;
+	padding: 6px 12px;
 	background-color: #1ABC9C;
 	color: #ffffff;
 	border-radius: 4px;
-	transition: background-color 0.3s ease;
-	font-size: 0.85rem;
+	transition: all 0.3s ease;
+	margin-top: auto; /* Push button to bottom */
   }
   
   .button:hover {
@@ -263,25 +272,25 @@
   /* Update Responsive Design */
   @media (min-width: 1200px) {
 	.projects {
-	  grid-template-columns: repeat(4, 1fr);
+	  grid-template-columns: repeat(3, 1fr); /* Show 3 cards per row on large screens */
 	}
   }
   
   @media (max-width: 1199px) and (min-width: 768px) {
 	.projects {
-	  grid-template-columns: repeat(3, 1fr);
+	  grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row on medium screens */
 	}
   }
   
   @media (max-width: 767px) {
 	.projects {
-	  grid-template-columns: repeat(2, 1fr);
+	  grid-template-columns: 1fr; /* Show 1 card per row on small screens */
+	  padding: 10px;
 	}
-  }
-  
-  @media (max-width: 480px) {
-	.projects {
-	  grid-template-columns: 1fr;
+	
+	.project-card {
+	  max-width: 500px; /* Limit width on mobile */
+	  margin: 0 auto;
 	}
   }
   
