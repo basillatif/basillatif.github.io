@@ -9,7 +9,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.6;
 	background-color: #ECF0F1; /* Light Gray */
-	color: #34495E; /* Dark Gray */
+	color: #000080; /* Navy Blue */
   }
   
   a {
@@ -19,7 +19,7 @@
   }
   
   a:hover {
-	color: #2C3E50; /* Navy Blue */
+	color: #000080; /* Navy Blue */
   }
   
   ul {
@@ -36,14 +36,14 @@
   
   header h1 {
 	font-size: 2.5rem;
-	color: #2C3E50; /* Navy Blue */
+	color: #000080; /* Navy Blue */
   }
   
   /* Navigation Bar */
   .topnav {
 	display: flex;
 	justify-content: center;
-	background-color: #2C3E50; 
+	background-color: #000080; 
 	flex-wrap: wrap;
 	font-size: 18px;
   }
