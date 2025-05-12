@@ -325,3 +325,11 @@
 	}
   }
   
+  table {
+	border-collapse: separate;
+	border-spacing: 16px 12px; /* horizontal vertical spacing */
+  }
+  th, td {
+	padding: 12px 18px; /* vertical horizontal padding */
+  }
+  
