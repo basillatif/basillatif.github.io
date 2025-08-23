@@ -420,6 +420,69 @@ td {
 	}
   }
 
+  /* Hit Counter Styles */
+  .hit-counter {
+	text-align: center;
+	margin: 40px 0 20px 0;
+	padding: 20px;
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	border-radius: 8px;
+	border: 1px solid #dee2e6;
+  }
+
+  .counter-container {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	border-radius: 25px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	border: 1px solid #e9ecef;
+  }
+
+  .counter-label {
+	font-size: 14px;
+	font-weight: 600;
+	color: #6c757d;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+  }
+
+  .counter-number {
+	font-size: 18px;
+	font-weight: 700;
+	color: #007bff;
+	font-family: 'Courier New', monospace;
+	background: linear-gradient(45deg, #007bff, #0056b3);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	padding: 2px 8px;
+	border-radius: 4px;
+	background-color: rgba(0, 123, 255, 0.1);
+  }
+
+  /* Responsive adjustments for hit counter */
+  @media (max-width: 768px) {
+	.hit-counter {
+	  margin: 30px 0 15px 0;
+	  padding: 15px;
+	}
+	
+	.counter-container {
+	  padding: 8px 15px;
+	}
+	
+	.counter-label {
+	  font-size: 12px;
+	}
+	
+	.counter-number {
+	  font-size: 16px;
+	}
+  }
+
   /* Paragon Chief Data Officer Styles */
   .paragon-section {
 	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
