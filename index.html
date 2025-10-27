@@ -134,7 +134,48 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Basil Latif. All rights reserved.</p>
+    <div class="visitor-counter">
+      <p>This site has had <span id="visitorCount">Loading...</span> unique visitors!</p>
+    </div>
   </footer>
+
+  <!-- Unique Visitor Counter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check if this is a new visitor (hasn't visited before)
+        const hasVisited = localStorage.getItem('hasVisited');
+        
+        if (!hasVisited) {
+            // This is a new visitor, increment the counter
+            fetch('https://api.countapi.xyz/hit/basillatif.github.io/visits')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('visitorCount').textContent = data.value;
+                })
+                .catch(error => {
+                    console.log('Counter service unavailable, using fallback');
+                    // Fallback: use a simple incrementing counter
+                    let fallbackCount = parseInt(localStorage.getItem('fallbackCount') || '0') + 1;
+                    localStorage.setItem('fallbackCount', fallbackCount);
+                    document.getElementById('visitorCount').textContent = fallbackCount;
+                });
+            
+            // Mark this visitor as having visited
+            localStorage.setItem('hasVisited', 'true');
+        } else {
+            // Returning visitor, just show current count
+            fetch('https://api.countapi.xyz/get/basillatif.github.io/visits')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('visitorCount').textContent = data.value;
+                })
+                .catch(error => {
+                    console.log('Counter service unavailable');
+                    document.getElementById('visitorCount').textContent = 'many';
+                });
+        }
+    });
+  </script>
 
 </body>
 </html>

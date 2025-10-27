@@ -183,6 +183,26 @@
 	padding: 15px 0;
 	margin-top: 40px;
   }
+
+  /* Visitor Counter */
+  .visitor-counter {
+	margin-top: 20px;
+	padding: 20px 0;
+  }
+
+  .visitor-counter p {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #1ABC9C; /* Teal */
+	margin: 0;
+  }
+
+  .visitor-counter #visitorCount {
+	font-size: 2.2rem;
+	font-weight: 900;
+	color: #E74C3C; /* Red */
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
   
   /* Career, Activities, and Competencies Sections */
   .career, .activities, .competencies, .additional-sections {
