@@ -19,6 +19,9 @@
   
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <script data-goatcounter="https://basillatif.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 
@@ -131,13 +134,75 @@
 
   </div>
 
+  <div class="visitor-counter premium-counter">
+  <div class="premium-stat">
+    <div class="premium-number" id="visits-today">--</div>
+    <div class="premium-label">Today</div>
+  </div>
+
+  <div class="premium-divider"></div>
+
+  <div class="premium-stat">
+    <div class="premium-number" id="visits-week">--</div>
+    <div class="premium-label">This Week</div>
+  </div>
+
+  <div class="premium-divider"></div>
+
+  <div class="premium-stat">
+    <div class="premium-number" id="visits-total">--</div>
+    <div class="premium-label">Total Visits</div>
+  </div>
+</div>
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Basil Latif. All rights reserved.</p>
+    <p>&copy; 2026 Basil Latif. All rights reserved.</p>
     <div class="visitor-counter">
       <p>This site has had <span id="visitorCount">Loading...</span> unique visitors!</p>
     </div>
   </footer>
 
+  <script>
+  async function loadCounter(id, url) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      if (typeof data.count !== "undefined") {
+        el.textContent = Number(data.count).toLocaleString();
+      } else {
+        el.textContent = "--";
+      }
+    } catch (err) {
+      console.error(`Failed loading ${id}:`, err);
+      el.textContent = "--";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const base = "https://basillatif.goatcounter.com/counter/TOTAL.json";
+
+    const now = new Date();
+
+    // Local date formatted as YYYY-MM-DD
+    const y = now.getFullYear();
+    const m = String(now.getMonth() + 1).padStart(2, "0");
+    const d = String(now.getDate()).padStart(2, "0");
+    const todayStr = `${y}-${m}-${d}`;
+
+    // Total site visits
+    loadCounter("visits-total", base);
+
+    // Visits today
+    loadCounter("visits-today", `${base}?start=${todayStr}`);
+
+    // Visits this week
+    loadCounter("visits-week", `${base}?start=week`);
+  });
+</script>
 </body>
 </html>
