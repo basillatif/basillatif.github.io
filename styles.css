@@ -553,11 +553,19 @@ body > h1:first-child {
   gap: 2.5rem;
 }
 
+.current-projects {
+  margin-bottom: 4rem;
+}
+
 .project-card {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
   padding: 2rem;
+}
+
+.featured-project {
+  display: block;
 }
 
 .project-card:hover {
@@ -603,6 +611,30 @@ body > h1:first-child {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
+}
+
+.live-app-panel {
+  margin: 1.25rem 0 0;
+  padding: 1.25rem;
+  border: 1px solid rgba(15,118,110,0.22);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(15,118,110,0.1), rgba(15,23,42,0.04)),
+    var(--bg-subtle);
+}
+
+.live-app-panel h4 {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.live-app-panel p {
+  max-width: 620px;
+  margin: 0;
 }
 
 .project-content ul {
@@ -660,6 +692,19 @@ body > h1:first-child {
   color: #ffffff;
   transform: translateY(-1px);
   box-shadow: 0 4px 14px rgba(15,118,110,0.3);
+}
+
+.secondary-button {
+  margin-left: 0.75rem;
+  background: #ffffff;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.secondary-button:hover {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
 }
 
 /* ---- Consulting Page ---- */
@@ -925,6 +970,10 @@ header.page-header h1 {
     flex-direction: column;
     gap: 1.25rem;
     padding: 1.5rem;
+  }
+
+  .secondary-button {
+    margin-left: 0;
   }
 
   .project-image {
