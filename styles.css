@@ -123,7 +123,12 @@ header p {
 .executive-summary h2,
 .key-experience h2,
 .technical-expertise h2,
-.industries h2 {
+.industries h2,
+.consulting-section h2,
+.proof h2,
+.selected-work h2,
+.past-partners h2,
+.current-authority h2 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -418,6 +423,168 @@ footer p {
   margin: 0;
 }
 
+/* Consulting Funnel Page */
+.consulting-section,
+.proof,
+.selected-work,
+.past-partners,
+.current-authority {
+  margin-bottom: 4rem;
+}
+
+/* Current Authority (Paragon) */
+.paragon-section {
+  padding: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.paragon-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.paragon-logo {
+  max-width: 150px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.chief-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.paragon-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.paragon-responsibilities {
+  list-style: none;
+  padding: 0;
+}
+
+.paragon-responsibilities li {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Selected Work: LLM project icon (no logo image available) */
+.llm-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  border: 1px solid #e5e7eb;
+  background-color: #fafafa;
+}
+
+.llm-icon-wrap svg {
+  width: 72px;
+  height: 72px;
+}
+
+/* Condensed Past Partners */
+.partner-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.partner-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.partner-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.partner-logo-sm {
+  max-width: 70px;
+  max-height: 45px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.partner-text {
+  flex: 1;
+}
+
+.partner-text p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.partner-text strong {
+  color: #1a1a1a;
+}
+
+.partner-text a {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Funnel divider — subtle visual device that narrows down the page */
+.funnel-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d1d5db, transparent);
+  margin: 3rem auto;
+}
+
+.funnel-divider.w-100 { width: 100%; }
+.funnel-divider.w-85  { width: 85%; }
+.funnel-divider.w-70  { width: 70%; }
+.funnel-divider.w-55  { width: 55%; }
+.funnel-divider.w-40  { width: 40%; }
+.funnel-divider.w-25  { width: 25%; }
+
+/* Final CTA */
+.final-cta {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.final-cta-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.3px;
+}
+
+.final-cta-button {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
@@ -460,5 +627,15 @@ footer p {
   .expertise-columns {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .paragon-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .partner-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
