@@ -985,3 +985,59 @@ header.page-header h1 {
     padding: 1.5rem;
   }
 }
+
+/* ---- Consulting funnel additions ---- */
+
+.selected-work {
+  margin-bottom: 4rem;
+}
+
+/* Funnel divider — subtle visual device that narrows down the page */
+.funnel-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  margin: 3rem auto;
+}
+
+.funnel-divider.w-100 { width: 100%; }
+.funnel-divider.w-85  { width: 85%; }
+.funnel-divider.w-70  { width: 70%; }
+.funnel-divider.w-55  { width: 55%; }
+.funnel-divider.w-40  { width: 40%; }
+.funnel-divider.w-25  { width: 25%; }
+
+/* Selected Work: LLM project icon (no logo image exists for this entry) */
+.llm-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--accent);
+}
+
+.llm-icon-wrap svg {
+  width: 64px;
+  height: 64px;
+}
+
+/* Final CTA */
+.final-cta {
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
+
+.final-cta p.final-cta-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.final-cta-button {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+}
