@@ -166,6 +166,38 @@ header p {
   transform: scaleX(1);
 }
 
+.topnav a.active {
+  color: #ffffff;
+}
+
+.topnav a.active::after {
+  transform: scaleX(1);
+}
+
+/* ---- Page heading (title below the shared site header) ---- */
+.page-heading {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 0 2rem;
+}
+
+.page-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.page-subtitle {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+}
+
+.page-heading + .container {
+  padding-top: 2rem;
+}
+
 /* ---- Container ---- */
 .container {
   max-width: 900px;
