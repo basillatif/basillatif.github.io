@@ -42,7 +42,7 @@ body {
   line-height: 1.7;
   color: var(--text);
   background-color: var(--bg);
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
 }
@@ -110,7 +110,7 @@ header h1 {
 }
 
 header p {
-  font-size: 1.05rem;
+  font-size: 14px;
   color: #94a3b8;
   font-weight: 400;
   margin: 0;
@@ -134,7 +134,7 @@ header p {
 }
 
 .topnav a {
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 500;
   color: #94a3b8;
   text-decoration: none;
@@ -265,7 +265,7 @@ body > h1:first-child {
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
   margin: 0 0 1rem;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.2;
@@ -316,7 +316,7 @@ body > h1:first-child {
 }
 
 .hero-tagline {
-  font-size: 1.375rem;
+  font-size: 14px;
   line-height: 1.75;
   color: var(--text);
   font-weight: 400;
@@ -325,7 +325,7 @@ body > h1:first-child {
 }
 
 .hero-cta {
-  font-size: 1rem;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -336,7 +336,7 @@ body > h1:first-child {
   background: var(--accent);
   color: #fff;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 14px;
   padding: 0.65rem 1.4rem;
   border-radius: 6px;
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -357,7 +357,7 @@ body > h1:first-child {
 .industries h2,
 .consulting-section h2,
 .past-partners h2 {
-  font-size: 0.7rem;
+  font-size: 14px;
   font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
@@ -373,7 +373,7 @@ body > h1:first-child {
 }
 
 .executive-summary p {
-  font-size: 1.05rem;
+  font-size: 14px;
   line-height: 1.85;
   color: var(--text-muted);
   max-width: 720px;
@@ -400,7 +400,7 @@ body > h1:first-child {
 }
 
 .experience-item h3 {
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 0.875rem;
@@ -414,7 +414,7 @@ body > h1:first-child {
 }
 
 .experience-item li {
-  font-size: 0.925rem;
+  font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 0.6rem;
   line-height: 1.5;
@@ -452,7 +452,7 @@ body > h1:first-child {
 }
 
 .expertise-col h4 {
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 0.875rem;
@@ -466,7 +466,7 @@ body > h1:first-child {
 }
 
 .expertise-col li {
-  font-size: 0.925rem;
+  font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 0.6rem;
   line-height: 1.5;
@@ -499,7 +499,7 @@ body > h1:first-child {
 }
 
 .industries-list li {
-  font-size: 0.875rem;
+  font-size: 14px;
   color: var(--accent-dark);
   background: var(--accent-glow);
   border: 1px solid rgba(15,118,110,0.2);
@@ -572,7 +572,7 @@ body > h1:first-child {
 }
 
 .intro p {
-  font-size: 1.05rem;
+  font-size: 14px;
   line-height: 1.85;
   color: var(--text-muted);
   margin-bottom: 1rem;
@@ -630,7 +630,7 @@ body > h1:first-child {
 }
 
 .project-content h3 {
-  font-size: 0.7rem;
+  font-size: 14px;
   font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
@@ -640,7 +640,7 @@ body > h1:first-child {
 }
 
 .project-content p {
-  font-size: 0.95rem;
+  font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
 }
@@ -658,7 +658,7 @@ body > h1:first-child {
 .live-app-panel h4 {
   margin: 0 0 0.35rem;
   color: var(--accent);
-  font-size: 0.78rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -675,7 +675,7 @@ body > h1:first-child {
 }
 
 .project-content ul li {
-  font-size: 0.95rem;
+  font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 0.5rem;
   line-height: 1.6;
@@ -710,7 +710,7 @@ body > h1:first-child {
   padding: 0.55rem 1.2rem;
   background: var(--text);
   color: #ffffff;
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 600;
   border-radius: 6px;
   text-decoration: none;
@@ -768,7 +768,7 @@ body > h1:first-child {
 }
 
 .consulting-item h4 {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 400;
   color: var(--text-muted);
   margin-bottom: 1rem;
@@ -776,7 +776,7 @@ body > h1:first-child {
 }
 
 .consulting-item p {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 0.5rem;
@@ -806,7 +806,7 @@ body > h1:first-child {
 }
 
 .consulting-item ul li {
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--text-muted);
   padding-left: 1.1rem;
   position: relative;
@@ -848,7 +848,7 @@ body > h1:first-child {
 }
 
 .paragon-title .company-name {
-  font-size: 0.85rem;
+  font-size: 14px;
   font-weight: 500;
   color: var(--accent);
   margin: 0;
@@ -857,7 +857,7 @@ body > h1:first-child {
 }
 
 .paragon-description p {
-  font-size: 0.95rem;
+  font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 0.5rem;
@@ -895,7 +895,7 @@ td {
 th {
   color: var(--text);
   background: #ecfdf5;
-  font-size: 0.75rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -947,7 +947,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.85rem;
+  font-size: 14px;
   color: var(--text-light);
   margin: 0;
 }
@@ -974,7 +974,7 @@ header.page-header h1 {
 
   .topnav a {
     padding: 0.875rem 0.625rem;
-    font-size: 0.825rem;
+    font-size: 14px;
   }
 
   .container {
@@ -987,7 +987,7 @@ header.page-header h1 {
   }
 
   .hero-tagline {
-    font-size: 1.15rem;
+    font-size: 14px;
   }
 
   .experience-grid {
@@ -1070,7 +1070,7 @@ header.page-header h1 {
 }
 
 .final-cta-button {
-  font-size: 1rem;
+  font-size: 14px;
   padding: 0.75rem 2rem;
 }
 
@@ -1087,7 +1087,7 @@ header.page-header h1 {
 
 .ai-project-tag {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1110,11 +1110,11 @@ header.page-header h1 {
 .ai-project p,
 .ai-project li {
   color: #334155;
-  font-size: 1.02rem;
+  font-size: 14px;
 }
 
 .ai-project .ai-project-lead {
-  font-size: 1.15rem;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.55;
   color: var(--text);
